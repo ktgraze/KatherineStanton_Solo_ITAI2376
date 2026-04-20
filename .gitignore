@@ -205,3 +205,8 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# Environment variables - never commit real API keys
+.env
+.env.local
+.env.*.local
