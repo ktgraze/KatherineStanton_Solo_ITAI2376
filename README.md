@@ -176,7 +176,7 @@ To run your own query, see the [How to run](#how-to-run) section above.
 ---
 
 *Note: The agent's verbose reasoning chain (Thought → Action → Observation)
-is visible in the notebook output. The full view of the reasoning chain outputs are available in the [demo video](#demo).*
+is visible in the notebook output. The full view of the reasoning chain outputs are available in the [demo video](https://youtu.be/ei7FIT5csyY).*
 
 ## Known Limitations
 - **No live train data**: Companies like Union Pacific and BNSF do not have publicly available APIs, so live train tracking is not possible. The agent predicts blockages from historical patterns only.
@@ -193,7 +193,7 @@ A walkthrough of the agent handling three real-world scenarios —
 emergency dispatch, multi-crossing risk scan, and city planner
 infrastructure analysis.
 
-📽️ [Watch the demo video](your-video-link-here)
+📽️ [Watch the demo video](https://youtu.be/ei7FIT5csyY)
 
 The demo covers:
 - Scenario 1 — Emergency dispatch query (Leeland Street, 6pm Friday)
