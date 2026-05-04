@@ -152,67 +152,31 @@ To run your own query, see the [How to run](#how-to-run) section above.
 ### Example 1 — Emergency dispatch query
 
 **Input:**
-```python
-response = agent_executor.invoke({
-    "input": "I need to route an ambulance through Leeland Street "
-             "at 6pm on a Friday in March. "
-             "Check the most heavily blocked crossing on that street "
-             "and tell me if it is safe."
-})
-```
+![Scenario 1 input](screenshots/scenario1_code.png)
 
 **Output:**
-> The most heavily blocked crossing on Leeland Street (Crossing ID: 288224V)
-> is not safe for the ambulance to pass through at 6pm on a Friday in March
-> due to a high blockage risk of 94.0%. Immediate alert and rerouting are advised.
-
----
+![Scenario 1 output](screenshots/scenario1_answer.png)
 
 ### Example 2 — Multi-crossing risk scan
 
 **Input:**
-```python
-response = agent_executor.invoke({
-    "input": "It is 8am on a Monday morning in April. "
-             "I am a fire station commander in Houston's East End. "
-             "Which railroad crossings are currently high risk "
-             "and could delay my emergency vehicles today?"
-})
-```
+![Scenario 2 input](screenshots/scenario2_code.png)
 
 **Output:**
-> The high-risk crossing at 8:00 on Monday is Eastwood Street
-> (ID: 859522Y) with a 100% blockage risk.
-
----
+![Scenario 2 output](screenshots/scenario2_answer.png)
 
 ### Example 3 — City planner infrastructure analysis
 
 **Input:**
-```python
-response = agent_executor.invoke({
-    "input": "I am a Houston city transportation planner. "
-             "I need to justify an infrastructure investment "
-             "at Eastwood Street crossing 859522Y. "
-             "Can you give me the historical blockage patterns "
-             "and overall crossing information to support "
-             "a grade separation project proposal?"
-})
-```
+![Scenario 3 input](screenshots/scenario3_code.png)
 
 **Output:**
-> The Eastwood Street crossing 859522Y has a high number of blockage
-> reports with an increasing trend, particularly during rush hour and
-> weekends. The average blockage duration is 56 minutes, with the most
-> common duration being 16-30 minutes. The peak blockage hours are at
-> 7:00, 12:00, and 2:00. This data supports the need for a grade
-> separation project at this crossing to improve traffic flow and safety.
+![Scenario 3 output](screenshots/scenario3_answer.png)
 
 ---
 
 *Note: The agent's verbose reasoning chain (Thought → Action → Observation)
-is visible in the notebook output. Screenshots of full reasoning chains
-are available in the [demo video](#demo).*
+is visible in the notebook output. The full view of the reasoning chain outputs are available in the [demo video](#demo).*
 
 ## Known Limitations
 - **No live train data**: Companies like Union Pacific and BNSF do not have publicly available APIs, so live train tracking is not possible. The agent predicts blockages from historical patterns only.
